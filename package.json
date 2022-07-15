@@ -1,0 +1,26 @@
+{
+    "name": "stannum-go-syntax",
+    "displayName": "Stannum Golang Syntax",
+    "description": "Stannum Golang Syntax",
+    "publisher": "stannum",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "go",
+            "aliases": ["go", "go"],
+            "extensions": [".go"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "go",
+            "scopeName": "source.go",
+            "path": "./syntaxes/go.tmLanguage.json"
+        }]
+    }
+}
