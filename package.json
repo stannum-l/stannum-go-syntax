@@ -1,26 +1,45 @@
 {
-    "name": "stannum-go-syntax",
-    "displayName": "Stannum Golang Syntax",
-    "description": "Stannum Golang Syntax",
-    "publisher": "stannum",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.69.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "stannum-go-syntax",
+  "displayName": "Stannum Golang Syntax",
+  "description": "Stannum Golang Syntax",
+  "author": "Tin Lam <dev@chronospheres.com>",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "icon": "asset/icon.png",
+  "publisher": "stannum",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stannum-l/stannum-go-syntax"
+  },
+  "bugs": {
+    "url": "https://github.com/stannum-l/stannum-go-syntax/issues"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "go",
+        "aliases": [
+          "go",
+          "golang"
+        ],
+        "extensions": [
+          ".go"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "go",
-            "aliases": ["go", "go"],
-            "extensions": [".go"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "go",
-            "scopeName": "source.go",
-            "path": "./syntaxes/go.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "go",
+        "scopeName": "source.go",
+        "path": "./syntaxes/go.tmLanguage.json"
+      }
+    ]
+  }
 }
